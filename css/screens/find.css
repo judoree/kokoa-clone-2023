@@ -101,3 +101,25 @@
 .open-post__heart-count span {
     margin-left: 3px;
 }
+@keyframes heartBoom {
+    0% {
+        color: white;
+        transform: none;
+    }
+    50%{
+        color: tomato;
+        transform: scale(5);
+    }
+    100% {
+        color: blue;
+        transform: none;
+
+
+    }
+}
+
+
+.open-post__heart-count:hover i {
+    will-change: transform;
+    animation: heartBoom 2s linear infinite;
+}
